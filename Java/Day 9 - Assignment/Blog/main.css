@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #ff0080;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.about-us {
+    padding: 40px;
+    text-align: center;
+}
+
+.about-us h1 {
+    color: #ff0080;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.about-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.clothing {
+    padding: 40px;
+    text-align: center;
+}
+
+.grid-clothing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.clothing-item {
+    position: relative;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.clothing-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.clothing-item p {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.clothing-item img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background-color: #ff0080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}

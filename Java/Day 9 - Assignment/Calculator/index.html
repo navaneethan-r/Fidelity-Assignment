@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <img src="./Images/calculator.jpg" alt="Header Image" width="250" height="250">
+        
+        <form>
+            <div class="input-group">
+                <label for="input1">Input1</label>
+                <input type="number" id="input1" name="input1">
+            </div>
+            <div class="input-group">
+                <label for="input2">Input2</label>
+                <input type="number" id="input2" name="input2">
+            </div>
+            <div class="input-group">
+                <label for="operation">Select Operation:</label>
+                <select id="operation" name="operation">
+                    <option value="">Select..</option>
+                    <option value="ADD">ADD</option>
+                    <option value="SUBTRACT">SUBTRACT</option>
+                    <option value="MULTIPLY">MULTIPLY</option>
+                    <option value="DIVIDE">DIVIDE</option>
+                </select>
+            </div>
+            <div class="button-group">
+                <button type="submit"><img src="./Images/calc.png" alt="Submit"></button>
+                <button type="reset"><img src="./Images/reset.png" alt="Reset"></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

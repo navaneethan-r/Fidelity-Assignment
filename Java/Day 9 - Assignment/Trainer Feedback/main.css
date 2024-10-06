@@ -1,0 +1,76 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #F500FF;
+    line-height: 1.5;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #FF4500;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.theader {
+    background-color: #800000;
+    color: white;
+}
+
+
+tr:nth-child(2) {
+    background-color: #ff0080; 
+}
+
+tr:nth-child(odd):not(:first-child) {
+    background-color: #add8e6; 
+}
+
+tr:nth-child(even):not(:first-child) {
+    background-color: #ff0080; 
+}
+
+#excellent {
+    background-color: rgb(78, 255, 78); 
+    color: white; 
+}
+
+#very-good {
+    background-color: rgb(78, 255, 78); 
+    color: white; 
+}
+
+#good {
+    background-color: yellow;
+    color: black;
+}
+
+#average {
+    background-color: gray;
+    color: white;
+}
+
+#below-average {
+    background-color: red;
+    color: white; 
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+th {
+    font-weight: bold;
+}
