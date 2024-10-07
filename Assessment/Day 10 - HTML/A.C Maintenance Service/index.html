@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Maintenance Service</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<h1>AC Maintenance Service</h1>
+<form id="acServiceForm">
+    <label for="customerName">Customer Name</label>
+    <input type="text" id="customerName" placeholder="Enter your name" required>
+
+    <label>Gender</label>
+    <div style="display: flex; align-items: center;">
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male" style="margin-right: 20px;">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label>
+    </div>
+
+    <label for="mobileNumber">Mobile Number</label>
+    <input type="tel" id="mobileNumber" placeholder="Enter your mobile number" pattern="^[789]\d{9}$" required>
+
+    <label for="email">Email ID</label>
+    <input type="email" id="email" placeholder="Enter your email Id" required>
+
+    <label for="address">Address</label>
+    <textarea id="address" rows="5" cols="25" placeholder="Enter your address" required></textarea>
+
+    <label for="acTypes">AC Type</label>
+    <input list="acTypes" id="acType" required>
+    <datalist id="acTypes">
+        <option value="Split">
+        <option value="Window">
+        <option value="Centralized">
+        <option value="Portable">
+    </datalist>
+
+    <label for="serviceType">Service Type</label>
+    <select id="serviceType" required>
+        <option value="Cleaning">Cleaning</option>
+        <option value="Repair">Repair</option>
+        <option value="Gas Refill">Gas Refill</option>
+    </select>
+
+    <label for="dateForAppointment">Date for Appointment</label>
+    <input type="date" id="dateForAppointment" required>
+
+    <label>
+        <input type="checkbox" id="yearlyMaintenance"> Select if required
+    </label>
+
+    <label for="duration">Duration in months from the previous service</label>
+    <input type="range" id="duration" min="0" max="6" step="1" title="0 to 6 Months" required>
+
+    <div style="display: flex; justify-content: space-between;">
+        <input type="submit" value="Submit" style="flex: 1; margin-right: 10px;">
+        <input type="reset" value="Clear" style="flex: 1;">
+    </div>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
